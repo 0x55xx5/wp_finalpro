@@ -1,6 +1,6 @@
 "use client";
 
-import { Store } from "@prisma/client";
+import { Store } from "@/app/generated/prisma";
 import { Button } from "@/components/ui/button";
 import {
 	Popover,
@@ -58,7 +58,7 @@ export default function StoreSwitcher({
 
 	const onStoreSelect = (store: { value: string; label: string }) => {
 		setOpen(false);
-		router.push(`http://localhost:3000/${store.value}`);
+		router.push(`/${store.value}`);
 	};
 
 	return (

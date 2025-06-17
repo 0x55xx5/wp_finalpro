@@ -14,7 +14,7 @@ import { Heading } from "@/components/ui/heading";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Color } from "@prisma/client";
+import { Color } from "@/app/generated/prisma";
 
 import axios from "axios";
 import { Trash } from "lucide-react";

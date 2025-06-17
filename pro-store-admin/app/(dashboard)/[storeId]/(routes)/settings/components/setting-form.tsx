@@ -16,7 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { useOrigin } from "@/hooks/use-origin";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Store } from "@prisma/client";
+import { Store } from "@/app/generated/prisma";
 
 import axios from "axios";
 import { Trash } from "lucide-react";
@@ -86,7 +86,7 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({ initialData }) => {
 			/>
 			<div className="flex items-center justify-between">
 				<Heading
-					title="Store Settings"
+					title="Store Profiles"
 					
 				/>
 				<Button
@@ -133,11 +133,7 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({ initialData }) => {
 				</form>
 			</Form>
 			<Separator />
-			<ApiAlert 
-				title="NEXT_PUBLIC_API_URL"
-				description={`${origin}/api/${params.storeId}`}
-				variant="public"
-			/>
+			
 		</>
 	);
 };

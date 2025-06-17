@@ -24,7 +24,7 @@ import {
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Category, Color, Product, Size } from "@prisma/client";
+import { Category, Color, Product, Size } from "@/app/generated/prisma";
 
 import axios from "axios";
 import { Trash } from "lucide-react";
